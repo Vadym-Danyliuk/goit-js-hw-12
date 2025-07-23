@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  padding: 24px;
+  background-color: #f7f7f7;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.form input[type='text'] {
+  padding: 10px 16px;
+  width: 300px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+.form input[type='text']:focus {
+  border-color: #3f51b5;
+  outline: none;
+}
+
+.form button {
+  padding: 10px 20px;
+  background-color: #3f51b5;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form button:hover {
+  background-color: #303f9f;
+}
+
+.gallery {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+}
+
+.gallery li {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.gallery li:hover {
+  transform: scale(1.02);
+}
+
+.gallery-item {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid #eee;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 12px;
+  background-color: #fafafa;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+  color: #666;
+}
+
+.info div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.info span {
+  font-size: 16px;
+}
+
+.load-more {
+  display: block;
+  margin: 32px auto 16px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3f51b5;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.load-more:hover {
+  background-color: #303f9f;
+}
+
+.load-more.hidden {
+  display: none;
+}
+
+.loader {
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin: 24px auto;
+  border: 5px solid #ccc;
+  border-top-color: #3f51b5;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.loader.hidden {
+  display: none;
+}
+
+.loader.visible {
+  display: block;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.counter-text {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  margin-top: 8px;
+}
+
+.counter-text.hidden {
+  display: none;
+}
