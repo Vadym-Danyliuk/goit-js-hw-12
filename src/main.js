@@ -42,7 +42,7 @@ form.addEventListener('submit', async e => {
     if (data.hits.length === 0) {
       iziToast.info({
         message:
-          'Вибачте, але за вашим запитом зображень не знайдено. Спробуйте інший запит!',
+          'Вибач, друже, але за вашим запитом зображень не знайдено. Спробуйте інший запит!',
         position: 'topRight',
       });
       return;
